@@ -1,0 +1,170 @@
+@import './mixins.scss';
+
+@mixin sectionContentSize {
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page {
+    &__content {
+      @include sectionContentSize;
+      min-height: 600px;
+      @include mobile {
+        min-height: 500px;
+      }
+    }
+    &__info-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+.MacBook {
+    min-width: 49%;
+    height: 60%;
+    background-color: rgb(250, 250, 250);
+    @include mobile {
+        height: 350px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.img-info {
+    display: block;
+    background-size: contain;
+    bottom: 0;
+    height: 250px;
+    width: 40%;
+    transform: translateX(77%);
+    @include mobile {
+        height: 25%;
+    position: absolute;
+    transform: translateY(-370px);
+    left: 30%;
+    }
+}
+
+.img-info2 {
+    display: block;
+    background-size: contain;
+    bottom: 0;
+    height: 250px;
+    width: 50%;
+    transform: translateX(50%);
+    @include mobile {
+        height: 25%;
+    position: absolute;
+    transform: translateY(-5px);
+    left: 25%;
+    }
+}
+
+.iPad-Pro {
+    min-width: 49%;
+    margin-right: 15px;
+    background-color: rgb(250, 250, 250);   
+    @include mobile {
+        margin-top: 1px;
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.info-text__head{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.info-text {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-right: 5px;
+    line-height: 1.97059;
+    letter-spacing: .022em;
+}
+.info-text__body{
+    color: rgb(29, 153, 255);
+    text-decoration: none;
+    padding-right: 10px;
+    &:hover {
+        border-bottom: 0.1px solid #6bf;
+    }
+}
+.href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+}
+.viv {
+    display: block;
+    justify-content: center;
+    padding-right: 10px;
+    color: rgb(29, 153, 255);
+    transform: translateY(-0.2px);
+}
+
+.page2 {
+    transform: translateY(-120px);
+}
+
+.page3 {
+        transform: translateY(-240px);
+}
+
+
+.Mac-Mini {
+    min-width: 49%;
+    margin-right: 15px;
+    background-image: url(../../assets/images/lesson_6/mac_mini__c1035c715c_large.jpg); 
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    min-height: 61%;
+    @include mobile {
+        margin-top: 125px;
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.info-text__body{
+    color: rgb(29, 153, 255);
+    text-decoration: none;
+    padding-right: 10px;
+    &:hover {
+        border-bottom: 0.1px solid #6bf;
+    }
+}
+
+.Music {
+    min-width: 48%;
+    height: 500px;
+    margin-right: 15px;
+    background-image: url(../../assets/images/lesson_6/queen__543e514c_large.jpg); 
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-bottom: 20px;
+    @include mobile {
+        margin-top: 10px;
+        height: 350px;
+        width: 100%;
+    }
+}
+
+.info-text_decorate {
+    display: flex;
+    justify-content: center;
+}

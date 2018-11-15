@@ -1,0 +1,122 @@
+@import './mixins.scss';
+
+@mixin sectionContentSize {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+$main-section-bg-color: rgb(0,0,0);
+
+.section {
+  &__content {
+    @include sectionContentSize;
+    min-height: 600px;
+    @include mobile {
+      min-height: 500px;
+    }
+  }
+  &_main {
+    background-color: $main-section-bg-color;
+  }
+  &__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    &_iphone-xs {
+      background-image: url(../../assets/images/lesson_6/iphone_xs_0afef_large_2x.jpg);
+      background-position: bottom;
+      height: 300px;
+      @include mobile {
+        background-image: url(../../assets/images/lesson_6/iphone_xs_0afef_small_2x.jpg);
+        height: 350px;
+      }
+    }
+  }
+  &__text-block {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+.text-block {
+  text-align: center;
+  &_dark {
+    color: rgb(255, 255, 255);
+    @include mobile  {
+      position: absolute;
+      top: 30px;
+    }
+  }
+}
+
+.text-block__header {
+  font-size: 46px;
+  line-height: 1.14815;
+  font-weight: 400;
+  letter-spacing: .008em;
+  margin-bottom: 5px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.text-block__description {
+  font-size: 27px;
+  line-height: 1.14815;
+  font-weight: 400;
+  letter-spacing: .008em;
+  margin-bottom: 5px;
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.text-block__links {
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.text-block__link {
+  color: #6bf;
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: .011em;
+  &:hover {
+    border-bottom: 0.1px solid rgb(71, 171, 253);
+  }
+  @include mobile {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+}
+
+.res {
+  color: #6bf;
+  display: block;
+  transform: translateY(5px);
+  width: 8%;
+  margin-right: 10px;
+  @include mobile {
+    display: block;
+    transform: translateY(3px);
+    font-size: 12px;
+    margin-right: 2px;
+  }
+}
+
+
+

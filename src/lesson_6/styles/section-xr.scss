@@ -1,0 +1,41 @@
+@import './mixins.scss';
+
+@mixin sectionContentSize {
+max-width: 1200px;
+margin: 0 auto;
+position: relative;
+}
+
+$main-section-bg-color: rgb(0,0,0);
+
+.section {
+    &__content {
+      @include sectionContentSize;
+      min-height: 600px;
+      @include mobile {
+        min-height: 500px;
+      }
+    }
+    &_body {
+    margin-top: 10px; 
+    background-color: $main-section-bg-color;
+    }
+    &__image {
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      &_iphone-xr {
+        background-image: url(../../assets/images/lesson_6/hero-iphone-xr_large.jpg);
+        background-position: bottom;
+        height: 300px;
+        @include mobile {
+          background-image: url(../../assets/images/lesson_6/hero-iphone-xr_small.jpg);
+          height: 350px;
+        }
+      }
+   }
+}
