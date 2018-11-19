@@ -1,0 +1,23 @@
+.traffic-light {
+  display: inline-block;
+  padding: 4px;
+  background: #424242;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px; }
+  .traffic-light__bulb {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: opacity 200ms ease-in-out; }
+    .traffic-light__bulb:not(:last-child) {
+      margin-bottom: 5px; }
+    .traffic-light__bulb:not(.traffic-light__bulb--active) {
+      opacity: 0.5; }
+    .traffic-light__bulb--stop {
+      background: #f44336; }
+    .traffic-light__bulb--ready {
+      background: #FF9800; }
+    .traffic-light__bulb--go {
+      background: #4CAF50; }

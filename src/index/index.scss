@@ -1,3 +1,38 @@
 body {
- background-color: yellow;
+ background-repeat: no-repeat;
+ object-fit: cover;
 }
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.block {
+    background-color: blueviolet;
+    min-width: 20%;
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+    &_1 {
+        margin-right: 30px;
+    }
+    &_2 {
+        border-left: 1px solid rgb(255, 251, 0);
+        padding-left: 30px;
+    }
+    &_3 {
+        border-left: 1px solid rgb(255, 251, 0);
+        padding-left: 30px;
+        margin-left: 30px;
+    }
+}
+

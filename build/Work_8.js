@@ -60,63 +60,24 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 333);
+/******/ 	return __webpack_require__(__webpack_require__.s = 336);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 333:
+/***/ 336:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(334);
+module.exports = __webpack_require__(337);
 
 
 /***/ }),
 
-/***/ 334:
+/***/ 337:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-
-__webpack_require__(335);
-
-var trafficLightBulbs = document.querySelectorAll('.traffic-light__bulb');
-var setActive = function setActive(activeBulb) {
-    var activeClass = 'traffic-light__bulb--active';
-
-    trafficLightBulbs.forEach(function (bulb) {
-        bulb.classList.remove(activeClass);
-    });
-
-    activeBulb.classList.add(activeClass);
-};
-
-var activeBulb = 0;
-var goingUp = true;
-
-setInterval(function () {
-    setActive(trafficLightBulbs[activeBulb]);
-
-    if (goingUp) {
-        activeBulb += 1;
-    } else {
-        activeBulb -= 1;
-    }
-
-    if (activeBulb === 2) {
-        goingUp = false;
-    } else if (activeBulb === 0) {
-        goingUp = true;
-    }
-}, 1500);
-
-/***/ }),
-
-/***/ 335:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 

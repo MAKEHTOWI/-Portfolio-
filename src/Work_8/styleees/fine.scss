@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, ul, ol, h1, h2,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.page-section {
+    min-height: 500px;
+    display: flex;
+    justify-content: center; 
+}
+
+.page-section_dark {
+    background-color: rgb(49, 58, 90);
+}
+
+.page-content {
+    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.page-nav_item_text1 {
+    color: rgb(255, 255, 255);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-text1 {
+    font-size: 20px;
+}
+
+.page-nav_item {
+    background-color: rgb(49, 58, 90);
+    width: 25%;
+    flex-basis: 25%;
+}
+
+.page-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.page-menu_item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(49, 58, 90);
+}
+
+.page-menu_link {
+    text-decoration: none;
+    color: white;
+}
+
+.page-nav_item_text2 {
+    color: rgb(255, 255, 255);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-text2 {
+    margin: 10px;
+}
+
+.btn-submit {
+    padding: 13px;
+    border-radius: 4px;
+    background-color: rgb(203, 211, 218);
+    border: none;
+    outline: none;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.btn-submit:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: rgb(31, 219, 132);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 6px 35px 0 rgb(31, 219, 132);
+}
+
+.btn-submit:focus {
+    background-color: rgb(31, 219, 132); 
+    box-shadow: 0 6px 35px 0 rgb(31, 218, 131);
+}
+
+.main_start {
+    display: flex;
+    justify-content: space-around;
+    height: 440px;
+}
+
+.main_face_start {
+    width: 50%;
+}
+
+.main_text_bitcoin {
+    color: white;
+    font-size: 48px;
+}
+
+.mein_text {
+    color: white;
+    padding-bottom: px;
+    line-height: 2;
+}
+
+.image {
+    margin-top: 20px;
+    height: 363px;
+    
+     
+}    
+
+.page-section_light {
+    background-color: rgb(234, 235, 236);;
+}
+.page-light {
+    width: 100%;
+    min-height: 420px;
+    border-radius: 10px;
+    box-shadow: 0 10px 34px 0 rgba(116, 116, 116, 0.5);
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-60px);
+    display: flex;
+    justify-content: center;
+}
+
+.page-light_block {
+    width: 25%;
+    height: 75%;
+    padding-top: 10px;
+    margin-right: 100px;
+    margin-top: 90px;
+}
+.page-light_block2 {
+    width: 25%;
+    height: 75%;
+    padding-top: 10px;
+    margin-right: 100px;
+    margin-top: 90px;
+}
+.page-light_block3 {
+    width: 25%;
+    height: 75%;
+    padding-top: 10px;
+    margin-top: 90px;
+}
+
+.icon {
+    width: 20%;
+    border-radius: 6px;
+    padding-bottom: 40px;
+}
+
+.text-menu {
+    padding-bottom: 20px;  
+    color: rgb(3, 29, 91); 
+    font-size: 18px;
+}
+
+.mini {
+    color: rgb(91, 108, 148);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.headline {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 910px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(50, 50, 92);
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.monthly {
+    width: 162px;
+    height: 60px;
+    color: rgb(31, 219, 132);
+    border: 1px solid rgb(174, 253, 217);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.yearly {
+    width: 470px;
+    height: 60px;
+    color: rgb(31, 219, 132);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #f1fff8;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.info-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    box-shadow: 0 7px 24px 0 rgba(255, 255, 255, 0.966);
+    background-color: rgb(255, 255, 255);
+}
+.list  {
+    width: 378px;
+    height: 650px;
+    text-align: center;
+    margin-right: 20px;
+}
+.list2  {
+    width: 378px;
+    height: 650px;
+    text-align: center;
+    margin-right: 20px;
+}
+.list3  {
+    width: 378px;
+    height: 650px;
+    text-align: center;
+}
+
+.class {
+    padding-top: 65px;
+    color: rgb(50, 50, 92);
+    font-size: 24px;
+}
+
+.the-cost {
+    padding-top: 30px;
+    color: rgb(31, 219, 132);
+    font-size: 70px;
+}
+
+.info-list, p {
+    color: rgb(91, 108, 148);
+}
+
+.month {
+    padding-bottom: 80px;
+}
+
+.bady {
+    padding-bottom: 15px;
+}
+.bady2 {
+    padding-bottom: 15px;
+}
+.bady3 {
+    padding-bottom: 15px;
+}
+.bady4 {
+    padding-bottom: 15px;
+}
+
+.payment {
+    width: 170px;
+    height: 50px;
+    letter-spacing: 1px;
+    background-color: rgb(91, 108, 148);
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+.pay1 {
+    padding-top: 50px;
+}
+
+.pay {
+    border-radius: 5px;
+}
+
+.payment:hover {
+    background-color: rgb(31, 219, 132);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 6px 35px 0 rgb(31, 219, 132);
+}
+
+.payment:focus {
+    background-color: rgb(31, 219, 132); 
+    box-shadow: 0 6px 35px 0 rgb(31, 218, 131);
+}
+
+.list:hover {
+    transform: scale(1.2);
+    border: none;
+    box-shadow: 0 6px 35px 0 rgb(31, 219, 132);
+}
+
+.list2:hover {
+    transform: scale(1.2);
+    border: none;
+    box-shadow: 0 6px 35px 0 rgb(31, 219, 132);
+}
+
+.list3:hover {
+    transform: scale(1.2);
+    border: none;
+    box-shadow: 0 6px 35px 0 rgb(31, 219, 132);
+}
+
+.monthly:hover {
+    transform: scale(1.2);
+    border: none;
+    box-shadow: 0 0 10px 2px rgb(31, 219, 132);
+}
+.yearly:hover {
+    transform: scale(1.2);
+    border: none;
+    box-shadow: 0 0 10px 2px rgb(31, 219, 132);
+}
